@@ -1,0 +1,25 @@
+.section__title {
+  margin: 0px 0px 68px;
+  text-align: center;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin: 42px auto 0px;
+}
+
+.section__title--manuscript {
+  font-family: $manuscript-font;
+  font-size: 24px;
+  display: block;
+}
+
+.section__title--typescript {
+  font-size: 30px;
+  text-transform: uppercase;
+  display: block;
+}
