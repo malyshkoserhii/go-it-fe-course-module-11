@@ -1,66 +1,65 @@
 .services {
   padding: 52px 0px 100px;
-}
 
-.services__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  &__list {
+    @extend %align-between;
+    flex-wrap: wrap;
 
-.services__list-item {
-  display: flex;
-  flex-basis: 380px;
-}
+    &-item {
+      display: flex;
+      flex-basis: 380px;
 
-.services__list-item:not(:nth-last-of-type(-n + 3)) {
-  margin-bottom: 102px;
-}
+      &:not(:nth-last-of-type(-n + 3)) {
+        margin-bottom: 102px;
+      }
+    }
+  }
 
-.services__image {
-  flex-basis: 80px;
-  background-repeat: no-repeat;
-  background-position: top;
-}
+  &__image {
+    flex-basis: 80px;
+    background-repeat: no-repeat;
+    background-position: top;
 
-.services__image--alarm {
-  background-image: url("../images/services/alarm.svg");
-}
+    &--alarm {
+      background-image: url("../images/services/alarm.svg");
+    }
 
-.services__image--graph {
-  background-image: url("../images/services/graph.svg");
-}
+    &--graph {
+      background-image: url("../images/services/graph.svg");
+    }
 
-.services__image--computer {
-  background-image: url("../images/services/computer.svg");
-}
+    &--computer {
+      background-image: url("../images/services/computer.svg");
+    }
 
-.services__image--book {
-  background-image: url("../images/services/book.svg");
-}
+    &--book {
+      background-image: url("../images/services/book.svg");
+    }
 
-.services__image--home {
-  background-image: url("../images/services/home.svg");
-}
+    &--home {
+      background-image: url("../images/services/home.svg");
+    }
 
-.services__image--digital {
-  background-image: url("../images/services/digital.svg");
-}
+    &--digital {
+      background-image: url("../images/services/digital.svg");
+    }
+  }
 
-.services__description-wrapper {
-  flex-basis: 300px;
-}
+  &__description-wrapper {
+    flex-basis: 300px;
+  }
 
-.services__type {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
+  &__description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: $secondary-font;
+    color: $secondary-dark-color;
+  }
 
-.services__description {
-  font-family: $secondary-font;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 24px;
-  color: rgb(153, 153, 153);
+  &__type {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 }
